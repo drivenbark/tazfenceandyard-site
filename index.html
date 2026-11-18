@@ -1,371 +1,242 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tazmanian Fence & Yard LLC | Kenai Peninsula, AK</title>
-  <meta name="theme-color" content="#111111">
-  <style>
-    :root{--bg:#0b0b0b; --card:#121212; --brand:#cc1d1d; --accent:#f1b619; --text:#f5f5f5; --muted:#9aa0a6; --ok:#20c997; --max:1100px;}
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.5}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max);margin:auto;padding:0 16px}
-    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,11,11,.85);border-bottom:1px solid #222;z-index:10}
-    nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:44px;width:auto;display:block;border-radius:6px}
-    .brand h1{font-size:1.05rem;margin:0}
-    .menu a{margin-left:18px}
-    .btn{display:inline-block;background:var(--accent);color:#111;padding:12px 18px;border-radius:10px;font-weight:700}
-    .btn.secondary{background:#2b2b2b;color:#fff;border:1px solid #3a3a3a}
-    .hero{position:relative;padding:64px 0 48px;border-bottom:1px solid #1f1f1f;background:radial-gradient(1000px 300px at 50% -10%,rgba(204,29,29,.25),transparent)}
-    .hero .logo-big{max-width:min(820px,95%);border-radius:12px;border:1px solid #2a2a2a;background:#0f0f0f}
-    .hero h2{font-size:clamp(28px,4vw,44px);margin:14px 0 8px;font-weight:900;letter-spacing:.2px}
-    .hero p{color:var(--muted);max-width:750px;margin:6px auto 18px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-    .badges{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;color:#c9c9c9;justify-content:center}
-    .badges span{padding:6px 10px;border:1px solid #2b2b2b;border-radius:999px;background:#151515;font-size:.9rem}
-    section{padding:56px 0;border-bottom:1px solid #1f1f1f}
-    h3{font-size:clamp(22px,3vw,30px);margin:0 0 16px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .card{background:var(--card);border:1px solid #1f1f1f;border-radius:16px;padding:18px}
-    .card h4{margin:0 0 8px}
-    .list{margin:.2rem 0 .4rem 0;padding:0 0 0 18px}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-    .gallery img,.gallery .ph{aspect-ratio:4/3;background:#1a1a1a;border:1px dashed #2a2a2a;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#7d7d7d;width:100%;height:auto;object-fit:cover}
-    .cols{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
-    @media (max-width:880px){.cols{grid-template-columns:1fr} .brand h1{display:none}}
-    footer{padding:36px 0;color:#c9c9c9}
-    .footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .small{font-size:.92rem;color:#a9a9a9}
-    .phone{font-weight:800;color:#111;background:var(--ok);border-radius:8px;padding:4px 8px}
-    .notice{font-size:.9rem;color:#c9c9c9;margin-top:10px}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;background:#141414;border:1px solid #242424;color:#d7d7d7}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fence Installation &amp; Repair on the Kenai Peninsula | Tazmanian Fence &amp; Yard LLC</title>
+<meta name="description" content="Cedar, split rail, chain link and ornamental fencing, gate repair and yard services in Soldotna, Kenai, Sterling, Kasilof, Homer and Nikiski, Alaska. Call 907-252-1374 for a free estimate.">
+<link rel="canonical" href="https://tazfenceandyard.com/">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tazmanian Fence &amp; Yard LLC | Kenai Peninsula, AK">
+<meta property="og:description" content="Quality fencing, gates and yard services across the Kenai Peninsula. Free estimates.">
+<meta property="og:url" content="https://tazfenceandyard.com/">
+<meta property="og:image" content="https://tazfenceandyard.com/assets/web/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/web/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/web/icon-192.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Tazmanian Fence & Yard LLC","url":"https://tazfenceandyard.com/","telephone":"+19072521374","email":"estimates@tazfenceandyard.com","image":"https://tazfenceandyard.com/assets/web/og.jpg","logo":"https://tazfenceandyard.com/assets/web/logo.jpg","description":"Fence installation, gate repair and yard services on the Kenai Peninsula, Alaska.","areaServed":["Soldotna","Kenai","Sterling","Kasilof","Nikiski","Homer","Anchor Point","Cooper Landing","Seward"],"openingHours":"Mo-Sa 08:00-18:00"}
+</script>
+<style>
+:root{--bg:#0b0b0b;--bg2:#101010;--card:#141414;--line:#242424;--brand:#cc1d1d;--accent:#f1b619;--text:#f5f5f5;--muted:#a3a8ad;--ok:#20c997;--max:1140px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:auto;padding:0 18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#111;padding:13px 22px;border-radius:10px;font-weight:800;border:0;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.28)}
+header{position:sticky;top:0;z-index:20;background:rgba(11,11,11,.88);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800}
+.brand img{height:42px;width:auto;border-radius:6px}
+.brand:hover{text-decoration:none}
+.menu{display:flex;align-items:center;gap:20px}
+.menu a.t{color:#e8e8e8;font-weight:600}
+.menu .btn{padding:10px 16px}
+.hero{position:relative;min-height:min(88vh,760px);display:flex;align-items:center;background:#000 url(assets/web/hero.jpg) center/cover no-repeat;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.5) 55%,rgba(0,0,0,.12) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 28%);z-index:-1}
+.hero .wrap{width:100%}.hero .in{padding:70px 0 90px;max-width:680px}
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);line-height:1.04;margin:12px 0 16px;font-weight:900;letter-spacing:-.01em}
+.hero p.lead{font-size:1.15rem;color:#d9d9d9;margin:0 0 26px;max-width:560px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.badges span{padding:6px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(0,0,0,.45);font-size:.88rem;color:#e6e6e6}
+.trust{background:var(--bg2);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:6px 20px;padding:18px}
+.trust div{display:flex;gap:10px;align-items:center;color:#dcdcdc;font-weight:600;font-size:.95rem}
+.trust b{color:var(--accent);font-size:1.2rem}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+.sh{margin-bottom:30px}
+.sh h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:6px 0 8px;line-height:1.1}
+.sh p{color:var(--muted);margin:0;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:0 0 6px;font-size:1.2rem}
+.card .ic{width:44px;height:44px;border-radius:12px;background:rgba(241,182,25,.12);color:var(--accent);display:grid;place-items:center;font-size:1.3rem;margin-bottom:12px}
+.card p{color:var(--muted);margin:0 0 10px}
+.list{margin:0;padding-left:18px;color:#d6d6d6}.list li{margin:4px 0}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.step{position:relative;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--brand);font-weight:900;margin-bottom:10px}
+.step h3{margin:0 0 4px}.step p{margin:0;color:var(--muted)}
+.gallery{columns:3 260px;column-gap:12px}
+.gallery button{display:block;width:100%;padding:0;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#111;cursor:zoom-in;break-inside:avoid}
+.gallery img{width:100%;height:auto;transition:transform .35s}
+.gallery button:hover img{transform:scale(1.04)}
+.cols{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+@media(max-width:860px){.cols{grid-template-columns:1fr}.menu a.t{display:none}.brand span{display:none}}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:0 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--accent);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:0 0 16px;color:var(--muted)}
+form label{display:block;font-weight:600;font-size:.92rem;margin-bottom:14px}
+form input,form select,form textarea{width:100%;margin-top:6px;padding:12px;border-radius:10px;border:1px solid #2e2e2e;background:#0d0d0d;color:#fff;font:inherit}
+form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.two{grid-template-columns:1fr}}
+.hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.small{font-size:.92rem;color:var(--muted)}
+footer{padding:40px 0 90px;color:#c9c9c9}
+.footgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.callbar{display:none}@media(max-width:700px){.hero::before{background:linear-gradient(0deg,var(--bg) 0%,rgba(0,0,0,.78) 30%,rgba(0,0,0,.78) 100%)}}
+@media(max-width:700px){.callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:8px;padding:10px;background:rgba(11,11,11,.95);border-top:1px solid var(--line)}.callbar .btn{flex:1;padding:13px 8px}}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:50;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.open{display:flex}.lb img{max-height:90vh;max-width:94vw;border-radius:8px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:50%;width:46px;height:46px;font-size:1.5rem;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .p{left:14px;top:50%}.lb .n{right:14px;top:50%}
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <div class="brand">
-          <img id="brandLogo" src="assets/tazmanian-logo.jpg" alt="Tazmanian Fence & Yard LLC logo">
-          <h1 id="siteTitle">Tazmanian Fence & Yard LLC</h1>
-        </div>
-        <div class="menu">
-          <a href="#services">Services</a>
-          <a href="#areas">Areas</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact" class="btn">Get a Quote</a>
-        </div>
-      </nav>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#top"><img id="brandLogo" src="assets/web/logo-sm.jpg" alt="Tazmanian Fence &amp; Yard LLC logo" width="70" height="42"><span id="siteTitle">Tazmanian Fence &amp; Yard LLC</span></a>
+  <div class="menu"><a class="t" href="#services">Services</a><a class="t" href="#process">Process</a><a class="t" href="#gallery">Our Work</a><a class="t" href="#faq">FAQ</a><a class="btn" href="#contact">Free Estimate</a></div>
+</nav></div></header>
+
+<main id="top">
+<section class="hero" style="padding:0;border:0"><div class="wrap"><div class="in">
+  <div class="eyebrow">Kenai Peninsula, Alaska</div>
+  <h1 id="heroHeadline">Quality Fencing Across Alaska</h1>
+  <p class="lead" id="heroPara">Cedar, split rail, chain link and ornamental fencing, plus gates, repairs and yard work, built for Kenai Peninsula winters.</p>
+  <div class="cta-row"><a id="ctaPrimary" class="btn" href="tel:+19072521374">Call: 907-252-1374</a><a class="btn ghost" href="#contact">Get a Free Estimate</a></div>
+  <div id="badgeRow" class="badges"><span>Cedar &bull; Split Rail &bull; Chain Link &bull; Black Chain Link &bull; Ornamental</span><span>Gates &amp; Gate Repairs</span><span>Yard Services</span></div>
+</div></div></section>
+
+<div class="trust"><div class="wrap">
+  <div><b>&#10003;</b> Owner-operated</div><div><b>&#10003;</b> Free same-day estimates</div><div><b>&#10003;</b> Serving the whole Peninsula</div><div><b>&#10003;</b> Mon&ndash;Sat, 8am&ndash;6pm</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <div class="sh"><div class="eyebrow">What we do</div><h2>Fencing, gates &amp; yard services</h2><p>One crew for the whole job, from the first post to the last cleanup.</p></div>
+  <div class="grid">
+    <div class="card"><div class="ic">&#9638;</div><h3 id="svc1Title">Fencing</h3><p id="svc1Desc">Built to last with clean lines and strong hardware.</p><ul id="svc1List" class="list"></ul></div>
+    <div class="card"><div class="ic">&#9881;</div><h3 id="svc2Title">Gate Repairs</h3><p id="svc2Desc">Fast fixes that keep your gate swinging and latching like new.</p><ul id="svc2List" class="list"></ul></div>
+    <div class="card"><div class="ic">&#10047;</div><h3 id="svc3Title">Yard Services</h3><p id="svc3Desc">Keep your property tidy, bundled with fence projects or stand-alone.</p><ul id="svc3List" class="list"></ul></div>
+    <div class="card"><div class="ic">&#9874;</div><h3 id="svc4Title">Repairs &amp; Upgrades</h3><p id="svc4Desc">Quick fixes or full sections replaced to match your existing look.</p><ul id="svc4List" class="list"></ul></div>
+  </div>
+</div></section>
+
+<section id="process" style="background:var(--bg2)"><div class="wrap">
+  <div class="sh"><div class="eyebrow">How it works</div><h2>Simple, from call to finished fence</h2></div>
+  <div class="steps">
+    <div class="step"><h3>Tell us what you need</h3><p>Call or send the form. Fence type, rough length and where it goes is plenty to start.</p></div>
+    <div class="step"><h3>We measure &amp; quote</h3><p>We measure the line, work out posts, gates and hardware, and give you a clear written estimate.</p></div>
+    <div class="step"><h3>We build it</h3><p>Posts set right, clean lines, solid hardware, and the site left tidy.</p></div>
+    <div class="step"><h3>Walk it with you</h3><p>We check the gates, latches and finish with you before we call it done.</p></div>
+  </div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sh"><div class="eyebrow">Our work</div><h2>Recent projects</h2><p>Real jobs on the Peninsula. Tap a photo to enlarge.</p></div>
+  <div id="galleryGrid" class="gallery"></div>
+</div></section>
+
+<section id="areas" style="background:var(--bg2)"><div class="wrap cols">
+  <div>
+    <div class="sh"><div class="eyebrow">Where we work</div><h2 id="akTitle">Kenai Peninsula, Alaska</h2></div>
+    <div class="card"><p id="akDesc" style="color:#d6d6d6">Soldotna, Kenai, Sterling, Kasilof, Homer, Nikiski, &amp; nearby communities.</p><p class="small" style="margin:0">Not sure if we cover you? Call <a href="tel:+19072521374">907-252-1374</a>.</p></div>
+  </div>
+  <div>
+    <div class="sh"><div class="eyebrow">Why Tazmanian</div><h2>Built right the first time</h2></div>
+    <div class="card"><ul class="list"><li>Local crew, dependable scheduling</li><li>Transparent estimates, no surprises</li><li>Owner-operated quality control</li><li>Fence, gates and yard work from one company</li></ul></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:820px">
+  <div class="sh"><div class="eyebrow">Good to know</div><h2>Common questions</h2></div>
+  <details><summary>Do I need a permit for a fence?</summary><p>Usually not outside city limits. Inside city limits, fences over 8 feet generally need one. Rules differ by city, so check with yours if you&rsquo;re unsure, and we&rsquo;ll tell you what to expect when we quote.</p></details>
+  <details><summary>How close to the property line can the fence go?</summary><p>That depends on your lot and any easements. We work from your parcel information and measure from fixed points like the corner of the house. If the line is tight or disputed, a survey is the safest way to be sure.</p></details>
+  <details><summary>What fence types do you build?</summary><p>Cedar privacy (board-on-board, horizontal, shadowbox), split rail, galvanized and black vinyl-coated chain link, ornamental, and pedestrian and driveway gates.</p></details>
+  <details><summary>Can you repair my existing gate or fence?</summary><p>Yes. Post resets, hinge and latch replacement, re-squaring sagging gates, and storm damage repairs.</p></details>
+  <details><summary>How do I get an estimate?</summary><p>Call <a href="tel:+19072521374">907-252-1374</a> or send the form below. Estimates are free.</p></details>
+</div></section>
+
+<section id="contact" style="background:var(--bg2)"><div class="wrap cols">
+  <div>
+    <div class="sh"><div class="eyebrow">Free estimate</div><h2>Tell us about your project</h2></div>
+    <form class="card" id="estimateForm" novalidate>
+      <div class="two">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      </div>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <div class="two">
+        <label>Service area<select name="area"><option value="">Select your city</option><option>Soldotna</option><option>Kenai</option><option>Sterling</option><option>Kasilof</option><option>Nikiski</option><option>Cooper Landing</option><option>Homer</option><option>Anchor Point</option><option>Seward</option><option>Other (Please specify in details)</option></select></label>
+        <label>Fence type<select name="ftype"><option value="">Not sure yet</option><option>Cedar privacy</option><option>Split rail</option><option>Chain link</option><option>Black chain link</option><option>Ornamental</option><option>Gate / gate repair</option><option>Yard services</option></select></label>
+      </div>
+      <label>Project details<textarea name="details" rows="5" placeholder="Approx. length, timeline, gates needed..."></textarea></label>
+      <div class="hp" aria-hidden="true"><label>Leave blank<input name="company" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" id="submitBtn" type="submit" style="width:100%">Send Request</button>
+      <p id="formStatus" class="small" role="status" style="margin:10px 0 0"></p>
+    </form>
+  </div>
+  <div>
+    <div class="sh"><div class="eyebrow">Contact</div><h2>Talk to us directly</h2></div>
+    <div class="card" id="contactPhones">
+      <p><strong>Phone:</strong> <a href="tel:+19072521374" style="font-weight:700">907-252-1374</a></p>
+      <p><strong>Email:</strong> <a href="mailto:estimates@tazfenceandyard.com" style="font-weight:700">estimates@tazfenceandyard.com</a></p>
+      <p class="small" id="hoursLine" style="margin:0"><strong>Hours:</strong> Mon&ndash;Sat 8am&ndash;6pm</p>
     </div>
-  </header>
+  </div>
+</div></section>
+</main>
 
-  <section class="hero">
-    <div class="wrap" style="text-align:center">
-      <img class="logo-big" id="heroLogo" src="assets/tazmanian-logo.jpg" alt="Tazmanian Fence & Yard LLC">
-      <h2 id="heroHeadline">Quality Fencing Across Alaska</h2>
-      <div class="cta-row">
-        <a id="ctaPrimary" class="btn" href="tel:+19072521374">Call: 907-252-1374</a>
-        <a class="pill" href="#contact">Free Same-Day Estimate</a>
-      </div>
-      <div id="badgeRow" class="badges">
-        <span>Cedar • Split Rail • Chain Link • Black Chain Link • Ornamental</span>
-        <span>Gates & Gate Repairs</span>
-        <span>Yard Services</span>
-      </div>
-    </div>
-  </section>
+<footer><div class="wrap footgrid">
+  <div><strong id="footerTitle">Tazmanian Fence &amp; Yard LLC</strong><p class="small">Serving the Kenai Peninsula, AK</p></div>
+  <div class="small">&copy; <span id="y"></span> <span id="footerTitle2">Tazmanian Fence &amp; Yard LLC</span>. All rights reserved.</div>
+</div></footer>
 
-  <section id="services">
-    <div class="wrap">
-      <h3>Services</h3>
-      <div class="grid">
-        <div class="card">
-          <h4 id="svc1Title">Fencing</h4>
-          <p id="svc1Desc">Built to last with clean lines and strong hardware.</p>
-          <ul id="svc1List" class="list"></ul>
-        </div>
-        <div class="card">
-          <h4 id="svc2Title">Gate Repairs</h4>
-          <p id="svc2Desc">Fast fixes that keep your gate swinging and latching like new.</p>
-          <ul id="svc2List" class="list"></ul>
-        </div>
-        <div class="card">
-          <h4 id="svc3Title">Yard Services</h4>
-          <p id="svc3Desc">Keep your property tidy — bundled with fence projects or as stand-alone.</p>
-          <ul id="svc3List" class="list"></ul>
-        </div>
-        <div class="card">
-          <h4 id="svc4Title">Repairs & Upgrades</h4>
-          <p id="svc4Desc">Quick fixes or full sections replaced to match your existing look.</p>
-          <ul id="svc4List" class="list"></ul>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="callbar"><a class="btn" href="tel:+19072521374">Call Now</a><a class="btn ghost" href="#contact">Free Estimate</a></div>
+<div class="lb" id="lb" role="dialog" aria-label="Photo viewer"><button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&#8249;</button><img alt=""><button class="n" aria-label="Next">&#8250;</button></div>
 
-  <section id="areas">
-    <div class="wrap cols">
-      <div>
-        <h3>Where We Work</h3>
-        <div class="card">
-          <h4 id="akTitle">Kenai Peninsula, Alaska</h4>
-          <p id="akDesc" class="small">Soldotna, Kenai, Sterling, Kasilof, Homer, Nikiski, & nearby communities.</p>
-        </div>
-      </div>
-      <div>
-        <h3>Why Choose Us</h3>
-        <div class="card">
-          <ul class="list">
-            <li>Local crews, dependable scheduling</li>
-            <li>Transparent estimates — no surprises</li>
-            <li>Licensed, insured, & bonded</li>
-            <li>Owner-operated quality control</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <div class="wrap">
-      <h3>Recent Work</h3>
-      <div id="galleryGrid" class="gallery">
-        <div class="ph">Add photo 1</div>
-        <div class="ph">Add photo 2</div>
-        <div class="ph">Add photo 3</div>
-        <div class="ph">Add photo 4</div>
-        <div class="ph">Add photo 5</div>
-        <div class="ph">Add photo 6</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap cols">
-      <div>
-        <h3>Request a Free Estimate</h3>
-        <form class="card" id="estimateForm">
-          <label>Name<br><input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff"></label><br><br>
-          <label>Phone<br><input name="phone" style="width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff"></label><br><br>
-          <label>Email<br><input name="email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff"></label><br><br>
-          <label>Service Area<br>
-            <select name="area" style="width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff">
-              <option value="">Select your city</option>
-                <option>Soldotna</option>
-                <option>Kenai</option>
-                <option>Sterling</option>
-                <option>Kasilof</option>
-                <option>Nikiski</option>
-                <option>Cooper Landing</option>
-                <option>Homer</option>
-                <option>Anchor Point</option>
-                <option>Seward</option>
-                <option>Other (Please specify in details)</option>
-            </select>
-          </label><br><br>
-          <label>Project details<br>
-            <textarea name="details" rows="5" placeholder="Fence type, length, timeline..." style="width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff"></textarea>
-          </label><br><br>
-          <button class="btn" id="submitBtn" type="submit">Send Request</button>
-          <p id="formStatus" class="small" style="margin-top:10px"></p>
-        </form>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <div class="card" id="contactPhones">
-          <p>
-            <strong>Phone:</strong> 
-            <a href="tel:+19072521374" style="color:#f1b619;font-weight:700;">
-              907-252-1374
-            </a>
-          </p>
-
-          <p>
-            <strong>Email:</strong> 
-            <a href="mailto:estimates@tazfenceandyard.com" style="color:#f1b619;font-weight:700;">
-              estimates@tazfenceandyard.com
-            </a>
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="wrap footgrid">
-      <div>
-        <strong id="footerTitle">Tazmanian Fence & Yard LLC</strong>
-        <p class="small">Serving the Kenai Peninsula, AK</p>
-      </div>
-      <div class="small">
-        © <span id="y"></span> <span id="footerTitle2">Tazmanian Fence & Yard LLC</span> — All rights reserved.
-      </div>
-    </div>
-  </footer>
 <script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-
-  fetch('content.site.json')
-    .then(r => r.json())
-    .then(data => {
-      // Branding
-      document.getElementById('brandLogo').src = data.branding?.logo || 'assets/tazmanian-logo.jpg';
-      document.getElementById('heroLogo').src = data.branding?.logo || 'assets/tazmanian-logo.jpg';
-      document.getElementById('siteTitle').textContent = data.branding?.site_title || 'Tazmanian Fence & Yard LLC';
-      document.getElementById('footerTitle').textContent = data.branding?.site_title || 'Tazmanian Fence & Yard LLC';
-      document.getElementById('footerTitle2').textContent = data.branding?.site_title || 'Tazmanian Fence & Yard LLC';
-
-      // Hero
-      document.getElementById('heroHeadline').textContent = data.hero?.headline || 'Quality Fencing Across Alaska';
-      const cta1 = document.getElementById('ctaPrimary');
-      if (data.hero?.primary_cta?.label) cta1.textContent = data.hero.primary_cta.label;
-      if (data.hero?.primary_cta?.tel) cta1.href = 'tel:' + data.hero.primary_cta.tel;
-
-      // Badges
-      const badgeRow = document.getElementById('badgeRow');
-      if (badgeRow && Array.isArray(data.hero?.badges)) {
-        badgeRow.innerHTML = '';
-        data.hero.badges.forEach(b => {
-          const span = document.createElement('span');
-          span.textContent = b;
-          badgeRow.appendChild(span);
-        });
-      }
-
-      // Services helper
-      function fillCard(baseId, obj) {
-        const t = document.getElementById(baseId + 'Title');
-        const d = document.getElementById(baseId + 'Desc');
-        const ul = document.getElementById(baseId + 'List');
-        if (!t || !d || !ul || !obj) return;
-
-        t.textContent = obj.title || '';
-        d.textContent = obj.desc || '';
-        ul.innerHTML = '';
-        (obj.items || []).forEach(it => {
-          const li = document.createElement('li');
-          li.textContent = it;
-          ul.appendChild(li);
-        });
-      }
-
-      fillCard('svc1', data.services?.fencing);
-      fillCard('svc2', data.services?.gate_repairs);
-      fillCard('svc3', data.services?.yard);
-      fillCard('svc4', data.services?.repairs);
-
-      // Areas (AK only)
-      if (data.areas?.ak) {
-        document.getElementById('akTitle').textContent = data.areas.ak.title || 'Kenai Peninsula, Alaska';
-        document.getElementById('akDesc').textContent = data.areas.ak.desc || '';
-      }
-
-      // Contact
-
-      const cp = document.getElementById('contactPhones');
-
-      if (cp) {
-        let phoneHTML = '';
-
-        if (Array.isArray(data.contact?.phones)) {
-          phoneHTML = data.contact.phones
-            .map(ph => `
-              <p>
-                <strong>${ph.label}:</strong>
-                <a href="tel:${ph.tel}" style="color:#f1b619;font-weight:700;">
-                  ${ph.display}
-              </a>
-            </p>
-          `)
-          .join('');
-      }
-
-      let emailHTML = '';
-
-      if (data.contact?.email) {
-        emailHTML = `
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:${data.contact.email}" style="color:#f1b619;font-weight:700;">
-              ${data.contact.email}
-            </a>
-          </p>
-        `;
-      }
-
-      cp.innerHTML = phoneHTML + emailHTML;
-    }
-
-      // Gallery
-      const grid = document.getElementById('galleryGrid');
-      const imgs = data.gallery?.images || [];
-      if (grid && imgs.length) {
-        grid.innerHTML = '';
-        imgs.forEach(src => {
-          const img = document.createElement('img');
-          img.src = src;
-          img.alt = 'Project photo';
-          grid.appendChild(img);
-        });
-      }
-    })
-    .catch(e => console.error('content.site.json load error:', e));
-  </script>
-  <script>
-  const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbyE3D6AjltCVK1nlrua19lnyzwpLlalJy5hRFiKUfqvSO-5bEhKfR1Kly9bYcXPxe215Q/exec";
-
-  const form = document.getElementById("estimateForm");
-  const btn = document.getElementById("submitBtn");
-  const statusEl = document.getElementById("formStatus");
-
-  function setStatus(msg, ok = true) {
-    statusEl.textContent = msg;
-    statusEl.style.color = ok ? "#20c997" : "#ff6b6b";
-  }
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    // Instant feedback
-    btn.disabled = true;
-    const oldText = btn.textContent;
-    btn.textContent = "Sending…";
-    setStatus("Submitting your request…", true);
-
-    const formData = new FormData(form);
-    const payload = {
-      name: formData.get("name") || "",
-      phone: formData.get("phone") || "",
-      email: formData.get("email") || "",
-      area: formData.get("area") || "",
-      details: formData.get("details") || "",
-      source: window.location.hostname || "Website"
-    };
-
-    try {
-      await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify(payload),
-      });
-
-      // Success UI
-      setStatus("Request sent! We’ll reach out soon.", true);
-      form.reset();
-
-    } catch (err) {
-      setStatus("Couldn’t send. Please call 907-252-1374.", false);
-    } finally {
-      btn.disabled = false;
-      btn.textContent = oldText;
-    }
-  });
+document.getElementById('y').textContent=new Date().getFullYear();
+const FALLBACK=[3,2,6,4,8,10,12,13,5,11,1,7,9].map(i=>'assets/web/gallery-'+i+'.jpg');
+let IMGS=FALLBACK;
+function fill(b,o){const t=document.getElementById(b+'Title'),d=document.getElementById(b+'Desc'),u=document.getElementById(b+'List');if(!t||!o)return;t.textContent=o.title||'';d.textContent=o.desc||'';u.innerHTML='';(o.items||[]).forEach(x=>{const li=document.createElement('li');li.textContent=x;u.appendChild(li)})}
+function renderGallery(){const g=document.getElementById('galleryGrid');g.innerHTML='';IMGS.forEach((src,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','View project photo '+(i+1));const im=new Image();im.src=src.replace(/\.jpg$/,'-thumb.jpg');im.alt='Fence project on the Kenai Peninsula, photo '+(i+1);im.loading='lazy';im.onerror=()=>{im.onerror=null;im.src=src};b.appendChild(im);b.onclick=()=>openLb(i);g.appendChild(b)})}
+fetch('content.site.json').then(r=>r.json()).then(d=>{
+  if(d.hero?.headline)document.getElementById('heroHeadline').textContent=d.hero.headline;
+  if(d.hero?.paragraph)document.getElementById('heroPara').textContent=d.hero.paragraph;
+  const c=document.getElementById('ctaPrimary');if(d.hero?.primary_cta?.label)c.textContent=d.hero.primary_cta.label;if(d.hero?.primary_cta?.tel)c.href='tel:'+d.hero.primary_cta.tel;
+  const br=document.getElementById('badgeRow');if(br&&Array.isArray(d.hero?.badges)){br.innerHTML='';d.hero.badges.forEach(t=>{const s=document.createElement('span');s.textContent=t;br.appendChild(s)})}
+  fill('svc1',d.services?.fencing);fill('svc2',d.services?.gate_repairs);fill('svc3',d.services?.yard);fill('svc4',d.services?.repairs);
+  if(d.areas?.ak){document.getElementById('akTitle').textContent=d.areas.ak.title||'';document.getElementById('akDesc').textContent=d.areas.ak.desc||''}
+  if(d.contact?.hours)document.getElementById('hoursLine').innerHTML='<strong>Hours:</strong> '+d.contact.hours.replace(/[<>&]/g,'');
+  if(Array.isArray(d.gallery?.images)&&d.gallery.images.length)IMGS=d.gallery.images;
+  if(d.branding?.site_title){['siteTitle','footerTitle','footerTitle2'].forEach(id=>document.getElementById(id).textContent=d.branding.site_title)}
+}).catch(e=>console.error('content.site.json load error:',e)).finally(renderGallery);
+// lightbox
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');let cur=0;
+function openLb(i){cur=(i+IMGS.length)%IMGS.length;lbi.src=IMGS[cur];lb.classList.add('open')}
+lb.querySelector('.x').onclick=()=>lb.classList.remove('open');
+lb.querySelector('.p').onclick=()=>openLb(cur-1);lb.querySelector('.n').onclick=()=>openLb(cur+1);
+lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowLeft')openLb(cur-1);if(e.key==='ArrowRight')openLb(cur+1)});
+</script>
+<script>
+const FORM_ENDPOINT="https://script.google.com/macros/s/AKfycbyE3D6AjltCVK1nlrua19lnyzwpLlalJy5hRFiKUfqvSO-5bEhKfR1Kly9bYcXPxe215Q/exec";
+const form=document.getElementById("estimateForm"),btn=document.getElementById("submitBtn"),statusEl=document.getElementById("formStatus");
+function setStatus(m,ok=true){statusEl.textContent=m;statusEl.style.color=ok?"#20c997":"#ff6b6b"}
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const fd=new FormData(form);
+  if(fd.get("company"))return;
+  if(!fd.get("name")||!/^\S+@\S+\.\S+$/.test(fd.get("email")||"")){setStatus("Please enter your name and a valid email.",false);return}
+  btn.disabled=true;const old=btn.textContent;btn.textContent="Sending\u2026";setStatus("Submitting your request\u2026",true);
+  const ft=fd.get("ftype")||"";
+  const payload={name:fd.get("name")||"",phone:fd.get("phone")||"",email:fd.get("email")||"",area:fd.get("area")||"",details:(ft?"[Fence type: "+ft+"] ":"")+(fd.get("details")||""),source:window.location.hostname||"Website"};
+  try{
+    await fetch(FORM_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+    setStatus("Request sent! We\u2019ll reach out soon.",true);form.reset();
+  }catch(err){setStatus("Couldn\u2019t send. Please call 907-252-1374.",false)}
+  finally{btn.disabled=false;btn.textContent=old}
+});
 </script>
 </body>
 </html>
