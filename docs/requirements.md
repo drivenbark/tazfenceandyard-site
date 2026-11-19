@@ -16,3 +16,4 @@ From owner discovery call (Nov 2026):
 - REQ-APP-005: Given a crew member, when they sign in with phone number + 6-digit SMS code, then they see ONLY their own weekly timesheet and can log hours; the owner sees all hours; crew cannot see owner data. Supports multiple pay rates (travel / yard / job).
 - REQ-APP-006: Given logged income/expenses/hours, when the owner opens the tax view, then he sees a running quarterly estimated-tax summary.
 - Open questions: domain (~$15/yr), SMS provider, KPB parcel data source/licensing, whether to license to other fence companies later (multi-tenant from day one?).
+- REQ-TFY-006: Given the estimate form, when phone is missing or under 10 digits, then submit is blocked with a message (leads previously arrived with no phone). Fence-type list adds "Chain link with privacy slats", "Fence repair", "Other" based on real lead requests. Vinyl/field fence intentionally NOT added until Jared confirms he offers them.
